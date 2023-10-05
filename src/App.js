@@ -36,7 +36,7 @@ function App() {
               Attribute: {character.remainingAttrPoint} / {character.maxAttrPoint}
             </p>
             {[...character.attributes.values()].map((attribute) => {
-              return <AttributeRow character={character} attribute={attribute} />;
+              return <AttributeRow key={attribute.name} character={character} attribute={attribute} />;
             })}
           </div>
           {/* classes */}
